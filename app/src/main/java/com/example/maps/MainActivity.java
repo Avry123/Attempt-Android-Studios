@@ -12,7 +12,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     EditText email, password;
-    Button submit, calculator;
+    Button submit, calculator, lifeCycle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,10 +23,15 @@ public class MainActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         submit = findViewById(R.id.submit);
         calculator = findViewById(R.id.calculator);
+        lifeCycle = findViewById(R.id.lifeCycle);
 
         Intent intent1 = new Intent(this, MainActivity2.class);
 
+        //Calculator
         Intent intent2 = new Intent(this,MainActivity3.class);
+
+        //LifeCycle Methods.
+        Intent intent3 = new Intent(this, MainActivity4.class);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(intent2);
+            }
+        });
+
+        lifeCycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent3);
             }
         });
     }
