@@ -45,5 +45,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Life Cycle Methods" />
+        <Button
+            android:id="@+id/layouts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Layouts" />
     </LinearLayout>
 </LinearLayout>
