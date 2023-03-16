@@ -40,5 +40,10 @@
             android:layout_height="wrap_content"
             android:hint="Calculator"
             android:layout_marginTop="5dp"/>
+        <Button
+            android:id="@+id/lifeCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Life Cycle Methods" />
     </LinearLayout>
 </LinearLayout>

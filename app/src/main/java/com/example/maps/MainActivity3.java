@@ -2,6 +2,7 @@ package com.example.maps;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -50,6 +51,8 @@ public class MainActivity3 extends AppCompatActivity {
         Button mode = findViewById(R.id.modulus);
         Button equal = findViewById(R.id.equal);
 
+//  Go Back
+        Button redirect = findViewById(R.id.goBack);
 
 
 //   Answer
@@ -214,6 +217,15 @@ public class MainActivity3 extends AppCompatActivity {
                     temp = "";
                 }
 
+            }
+        });
+
+        Intent intent1 = new Intent(this, MainActivity.class);
+
+        redirect.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent1);
             }
         });
     }
