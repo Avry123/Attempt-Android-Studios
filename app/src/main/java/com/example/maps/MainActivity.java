@@ -12,7 +12,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     EditText email, password;
-    Button submit, calculator, lifeCycle, layouts;
+    private Button submit, calculator, lifeCycle, layouts, maps, goToUrl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
         calculator = findViewById(R.id.calculator);
         lifeCycle = findViewById(R.id.lifeCycle);
         layouts = findViewById(R.id.layouts);
+        goToUrl = findViewById(R.id.urlThing);
+
+        maps = findViewById(R.id.maps);
 
         Intent intent1 = new Intent(this, MainActivity2.class);
 
@@ -36,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
         //Layouts
         Intent intent4 = new Intent(this, MainActivity5.class);
+
+        //Maps
+        Intent intent5 = new Intent(this,MainActivity7.class);
+
+        Intent intent6 = new Intent(this, MainActivity8.class);
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +78,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(intent4);
+            }
+        });
+
+        maps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(intent5);
+            }
+        });
+
+        goToUrl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                Log.d("works", "it is working without error");
+                startActivity(intent6);
             }
         });
     }

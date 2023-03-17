@@ -44,11 +44,29 @@
             android:id="@+id/lifeCycle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Life Cycle Methods" />
+            android:hint="Life Cycle Methods"
+            android:layout_marginTop="5dp"
+            />
         <Button
             android:id="@+id/layouts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Layouts" />
+            android:hint="Layouts"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/maps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Maps"
+            android:layout_marginTop="5dp"
+            />
+        <Button
+            android:id="@+id/urlThing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="urlThing"
+            android:layout_marginTop="5dp"
+            />
     </LinearLayout>
 </LinearLayout>
